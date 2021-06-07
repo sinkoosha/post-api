@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "a0f5e26e-4a77-4ebe-a8be-69eb726dc695",
+		"name": "rest api laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8001/api/posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "  Bearer QVqvBD8OJoSNNn3uNj7Jg4Sjxb62fhID3ciHbkm1I3KN6iVGpv",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"posts"
+					]
+				},
+				"description": "post-api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8001/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n   \"username\" : \"sina@yahoo.com\",\r\n   \"password\" : \"sinasina123\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "post-api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8001/api/createArticle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n   \"title\" : 'title1',\r\n   \"body\" : \"body is very good\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/posts/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"posts",
+						"create"
+					]
+				},
+				"description": "post-api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8001/api/update/{$id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n   \"title\" : \"hellccccccccesss\",\r\n   \"body\" : \"updaterequest updaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequest\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/posts/update/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"posts",
+						"update",
+						"1"
+					]
+				},
+				"description": "post-api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8001/api/update/{$id} delete",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n   \"title\" : \"hellccccccccesss\",\r\n   \"body\" : \"updaterequest updaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequestupdaterequest\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/posts/delete/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"posts",
+						"delete",
+						"1"
+					]
+				},
+				"description": "post-api"
+			},
+			"response": []
+		}
+	]
+}
